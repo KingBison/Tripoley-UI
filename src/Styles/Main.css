@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+.main-main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: black;
+}
+
+.main-left, .main-right{
+    margin: 8px;
+    text-align: center;
+    background-color: wheat;
+    font-family: 'Titillium Web', sans-serif;
+}

@@ -1,0 +1,9 @@
+.admin-main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.admin-box {
+    height: 90vh;
+    width: 50vw;
+}

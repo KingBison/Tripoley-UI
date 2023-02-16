@@ -1,0 +1,27 @@
+h2, h5{
+    margin: 0;
+    height: fit-content;
+}
+
+.playercard-main{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: 0px 10px;
+    margin-bottom: 15px;
+}
+
+.playercard-top{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 60% 40%;
+}
+
+.playercard-bottom{
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.playercard-main, .playercard-top, .playercard-bottom, .playercard-top *, .playercard-bottom * {
+    border: solid black 1px;
+}
