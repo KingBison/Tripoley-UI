@@ -44,11 +44,12 @@ const Main = () => {
     }
 
     const getPlayerCards = () => {
-        if(serverData){
-            return(serverData.Players.map((player)=>{
-                return(<PlayerCard player={player}/>)
-            }))
+        if(!serverData || !serverData.Players || serverData.Players.length === 0){
+            return(<h2>No Players Yet</h2>)
         }
+        return(serverData.Players.map((player, key)=>{
+            return(<PlayerCard player={player}/>)
+        }))
     }
 
     return(
